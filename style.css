@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  height: 100vh;
+  max-width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/background.png");
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.navbar {
+  display: flex;
+  height: 12%;
+  align-items: center;
+  /* max-width: 100%;
+  justify-content: space-between;
+  padding: 1rem 6rem; */
+}
+.navbar .logo {
+  max-width: 3.2rem;
+  cursor: pointer;
+  /* height: 5vw; */
+}
+.navbar .menu {
+  max-width: 2rem;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  /* display: flex;
+  align-items: center; */
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 2rem;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+/* mainContent */
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col {
+  flex-basis: 50%;
+}
+.col h1 {
+  color: #fff;
+  font-size: 5rem;
+}
+.col p {
+  color: #fff;
+  line-height: 1.2rem;
+}
+.col button {
+  min-width: 14rem;
+  color: #000;
+  font-size: 1rem;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: transform 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.col button:hover {
+  transform: translateY(-10px);
+}
+.card {
+  max-width: 14rem;
+  height: 16rem;
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin: 10px 25px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.4s;
+}
+.card1 {
+  background-image: url(images/pic-1.png);
+}
+.card2 {
+  background-image: url(images/pic-3.png);
+}
+.card3 {
+  background-image: url(images/pic-3.png);
+}
+.card4 {
+  background-image: url(images/pic-4.png);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+.card p {
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+}
+
+@media (max-width: 460px) {
+  .card {
+    display: flex;
+  }
+  .row {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .container {
+    height: 300vh;
+  }
+  .col {
+    display: grid;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: baseline;
+    justify-items: center;
+  }
+}
